@@ -1,10 +1,40 @@
+:root {
+    /* Color styles */
+    --background: #303234;
+    --turquoise: #48E5C2;
+    --light-blue: #03A9F1;
+    --orange: #F18303;
+    --red: #F94409;
+    --pink: #E85D75;
+    --raspberry: #DD1155;
+    --caribbean-green: #06D6A0;
+    --malachite: #53DD6C;
+    --turqoise-desat: #C9F8ED;
+    --light-blue-desat: #B4E6FB;
+    --orange-desat: #FBDAB4;
+    --red-desat: #FEC7B6;
+    --pink-desat: #F9CFD6;
+    --raspberry-desat: #F5B8CC;
+    --caribbean-green-desat: #B5F3E3;
+    --malachite-desat: #CCF5D3;
+
+    /* Effect styles */
+    --turquoise--shadow:  22px 4px 4px rgba(72, 229, 194, 1);
+    --light-blue--shadow:  22px 4px 4px rgba(3, 169, 241, 1);
+    --orange--shadow:  22px 4px 4px rgba(241, 131, 3, 1);
+    --red--shadow:  22px 4px 4px rgba(249, 68, 9, 1);
+    --pink--shadow:  22px 4px 4px rgba(232, 93, 117, 1);
+    --raspberry--shadow:  22px 4px 4px rgba(221, 17, 85, 1);
+    --caribbean-green--shadow:  22px 4px 4px rgba(6, 214, 160, 1);
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Nunito', 'Roboto',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background) !important;
 }
 
 code {
