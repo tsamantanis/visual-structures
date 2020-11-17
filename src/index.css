@@ -19,13 +19,13 @@
     --malachite-desat: #CCF5D3;
 
     /* Effect styles */
-    --turquoise--shadow:  22px 4px 4px rgba(72, 229, 194, 1);
-    --light-blue--shadow:  22px 4px 4px rgba(3, 169, 241, 1);
-    --orange--shadow:  22px 4px 4px rgba(241, 131, 3, 1);
-    --red--shadow:  22px 4px 4px rgba(249, 68, 9, 1);
-    --pink--shadow:  22px 4px 4px rgba(232, 93, 117, 1);
-    --raspberry--shadow:  22px 4px 4px rgba(221, 17, 85, 1);
-    --caribbean-green--shadow:  22px 4px 4px rgba(6, 214, 160, 1);
+    --turquoise--shadow: 4px 4px 22px rgba(72, 229, 194, 1);
+    --light-blue--shadow: 4px 4px 22px rgba(3, 169, 241, 1);
+    --orange--shadow: 4px 4px 22px rgba(241, 131, 3, 1);
+    --red--shadow: 4px 4px 22px rgba(249, 68, 9, 1);
+    --pink--shadow: 4px 4px 22px rgba(232, 93, 117, 1);
+    --raspberry--shadow: 4px 4px 22px rgba(221, 17, 85, 1);
+    --caribbean-green--shadow: 4px 4px 22px rgba(6, 214, 160, 1);
 }
 
 body {
@@ -37,7 +37,149 @@ body {
   background-color: var(--background) !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.titleCard {
+    cursor: pointer !important;
+    transition: 0.3s ease;
+    border: none !important;
+}
+
+.card-turquoise {
+    color: var(--turquoise) !important;
+    background-color: var(--background) !important;
+}
+
+.card-turquoise:hover {
+    color: var(--turquoise) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--turquoise--shadow) !important;
+    -webkit-box-shadow: var(--turquoise--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-turquoise--selected {
+    color: var(--turquoise) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--turquoise--shadow) !important;
+    -webkit-box-shadow: var(--turquoise--shadow) !important;
+    -webkit-appearance: none;
+}
+.card-light-blue {
+    color: var(--light-blue) !important;
+    background-color: var(--background) !important;
+}
+
+.card-light-blue:hover {
+    color: var(--light-blue) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--light-blue--shadow) !important;
+    -webkit-box-shadow: var(--light-blue--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-light-blue--selected {
+    color: var(--light-blue) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--light-blue--shadow) !important;
+    -webkit-box-shadow: var(--light-blue--shadow) !important;
+    -webkit-appearance: none;
+}
+.card-orange {
+    color: var(--orange) !important;
+    background-color: var(--background) !important;
+}
+
+.card-orange:hover {
+    color: var(--orange) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--orange--shadow) !important;
+    -webkit-box-shadow: var(--orange--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-orange--selected {
+    color: var(--orange) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--orange--shadow) !important;
+    -webkit-box-shadow: var(--orange--shadow) !important;
+    -webkit-appearance: none;
+}
+.card-red {
+    color: var(--red) !important;
+    background-color: var(--background) !important;
+}
+
+.card-red:hover {
+    color: var(--red) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--red--shadow) !important;
+    -webkit-box-shadow: var(--red--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-red--selected {
+    color: var(--red) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--red--shadow) !important;
+    -webkit-box-shadow: var(--red--shadow) !important;
+    -webkit-appearance: none;
+}
+.card-pink {
+    color: var(--pink) !important;
+    background-color: var(--background) !important;
+}
+
+.card-pink:hover {
+    color: var(--pink) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--pink--shadow) !important;
+    -webkit-box-shadow: var(--pink--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-pink--selected {
+    color: var(--pink) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--pink--shadow) !important;
+    -webkit-box-shadow: var(--pink--shadow) !important;
+    -webkit-appearance: none;
+}
+.card-raspberry {
+    color: var(--raspberry) !important;
+    background-color: var(--background) !important;
+}
+
+.card-raspberry:hover {
+    color: var(--raspberry) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--raspberry--shadow) !important;
+    -webkit-box-shadow: var(--raspberry--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-raspberry--selected {
+    color: var(--raspberry) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--raspberry--shadow) !important;
+    -webkit-box-shadow: var(--raspberry--shadow) !important;
+    -webkit-appearance: none;
+}
+.card-caribbean-green {
+    color: var(--caribbean-green) !important;
+    background-color: var(--background) !important;
+}
+
+.card-caribbean-green:hover {
+    color: var(--caribbean-green) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--caribbean-green--shadow) !important;
+    -webkit-box-shadow: var(--caribbean-green--shadow) !important;
+    -webkit-appearance: none;
+}
+
+.card-caribbean-green--selected {
+    color: var(--caribbean-green) !important;
+    background-color: var(--background) !important;
+    box-shadow: var(--caribbean-green--shadow) !important;
+    -webkit-box-shadow: var(--caribbean-green--shadow) !important;
+    -webkit-appearance: none;
 }
