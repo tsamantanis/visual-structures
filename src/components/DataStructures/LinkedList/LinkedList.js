@@ -18,7 +18,6 @@ module.exports = class LinkedList {
             newNode.next = this.head;
             this.head.prev = newNode;
             this.head = newNode;
-            const hi = this.tail.prev;
         }
         return this; //returning the updated list
     }
