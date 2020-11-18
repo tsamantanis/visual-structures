@@ -104,9 +104,9 @@ module.exports = class LinkedList {
         }
 
         if (this.head.data === value) {
-            deleteFromHead();
+            this.deleteFromHead();
         } else if (this.tail.data === value) {
-            deleteFromTail()
+            this.deleteFromTail()
         }
 
         let currentNode = this.head;
