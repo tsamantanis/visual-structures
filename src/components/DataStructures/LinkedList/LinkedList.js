@@ -8,14 +8,19 @@ module.exports = class LinkedList {
     }
 
     // Prepend - Insert at head
-    prepend(newData) {
+    preppend(newData) {
         let newNode = new Node(newData);
-        newNode.next = this.head;
-        this.head.prev = newNode;
-        this.head = newNode;
 
-        if (this.tail === null) {
+        if (this.head === null) {
+            process.stdout.write(String() + "HEAD \n");
+            this.head = newNode;
             this.tail = newNode;
+        } else {
+            newNode.next = this.head;
+            this.head.prev = newNode;
+            this.head = newNode;
+            const hi = this.tail.prev;
+            process.stdout.write(String(hi.data) + "\n");
         }
         return this; //returning the updated list
     }
@@ -47,9 +52,9 @@ module.exports = class LinkedList {
             return false;
         } else {
             let temp = this.head;
-            while (temp != null) {
+            while (temp !== null) {
                 process.stdout.write(String(temp.data));
-                process.stdout.write(" -> ");
+                process.stdout.write(" <-> ");
                 temp = temp.next;
             }
             console.log("null");
@@ -80,10 +85,13 @@ module.exports = class LinkedList {
         if (this.isEmpty()) {
             return this;
         }
-        if (this.head !== null) {
-            tempNode = this.head.next;
+        if (this.head.next !== null) {
+            const tempNode = this.head.next;
             this.head.next = null;
             this.head = tempNode;
+        } else {
+            this.head = null;
+            this.tail = null;
         }
         return this;
     }
@@ -104,12 +112,10 @@ module.exports = class LinkedList {
         let currentNode = this.head;
         while (currentNode != null) {
             if (currentNode.data === value) {
-                prevNode = currentNode.prev;
-                nextNode = currentNode.next;
+                const prevNode = currentNode.prev;
+                const nextNode = currentNode.next;
                 prevNode.next = nextNode;
                 nextNode.prev = prevNode;
-                currentNode.next = null;
-                currentNode.prev = null;
                 return this;
             }
             currentNode = currentNode.next;
@@ -121,11 +127,15 @@ module.exports = class LinkedList {
         if (this.isEmpty()) {
             return this;
         }
+        if (this.tail === this.head) {
+            this.deleteFromHead();
+        }
         if (this.tail !== null) {
-            tempNode = this.tail.prev;
+            const tempNode = this.tail.prev;
+            tempNode.next = null
             this.tail.prev = null;
             this.tail = tempNode;
-            tempNode.next = null;
+
         }
         return this;
     }
