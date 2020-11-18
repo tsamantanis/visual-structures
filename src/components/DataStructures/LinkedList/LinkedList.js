@@ -12,7 +12,6 @@ module.exports = class LinkedList {
         let newNode = new Node(newData);
 
         if (this.head === null) {
-            process.stdout.write(String() + "HEAD \n");
             this.head = newNode;
             this.tail = newNode;
         } else {
@@ -20,7 +19,6 @@ module.exports = class LinkedList {
             this.head.prev = newNode;
             this.head = newNode;
             const hi = this.tail.prev;
-            process.stdout.write(String(hi.data) + "\n");
         }
         return this; //returning the updated list
     }
