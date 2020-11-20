@@ -39,14 +39,14 @@
 }
 
 .array .array-item {
-    animation: FadeIn 1s linear;
+    animation: FadeIn 1s ease;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
 
 .array .array-item:nth-child(6) {
     animation-delay: .;
-    -webkit-animation-delay: .5s 
+    -webkit-animation-delay: .5s
 }
 .array .array-item:nth-child(5) {
     animation-delay: 1s;
