@@ -1,7 +1,7 @@
-
+import squares from '../../Helpers/squares';
 const Node = require('./Node.js');
 
-module.exports = class LinkedList {
+class LinkedList {
     constructor() {
         this.head = null;
         this.tail = null;
@@ -40,7 +40,7 @@ module.exports = class LinkedList {
     }
 
     isEmpty() {
-        return (this.head == null);
+        return (this.head === null);
     }
 
     printList() {
@@ -50,13 +50,40 @@ module.exports = class LinkedList {
         } else {
             let temp = this.head;
             while (temp !== null) {
-                process.stdout.write(String(temp.data));
-                process.stdout.write(" <-> ");
+                console.log(String(temp.data) + " <-> ");
                 temp = temp.next;
             }
             console.log("null");
             return true;
         }
+    }
+
+    displayList() {
+        let visuals = [];
+        let currentNode = this.head;
+        let index = 0;
+        while (currentNode !== null) {
+            visuals.push(
+                <>
+                {currentNode === this.head ?
+                    <span className="head-pointer text-light-blue">HEAD</span>
+                : null }
+                <div className="linked-list-item" key={currentNode.data}>
+                    <img
+                        src={squares[index % this.getSize()]}
+                        className="isometric-square img-fluid"
+                        alt="Isometric square"
+                    />
+                </div>
+                {currentNode === this.tail ?
+                    <span className="tail-pointer text-light-blue">TAIL</span>
+                : null }
+                </>
+            );
+            currentNode = currentNode.next;
+            index += 1;
+        }
+        return visuals;
     }
 
     getHead() {
@@ -67,10 +94,21 @@ module.exports = class LinkedList {
         return this.tail;
     }
 
+    getSize() {
+        let size = 0;
+        let currentNode = this.head;
+        while (currentNode != null) {
+            size += 1;
+            currentNode = currentNode.next
+        }
+        return size;
+
+    }
+
     search(value) {
         let currentNode = this.head;
         while (currentNode != null) {
-            if (currentNode.data == value) {
+            if (currentNode.data === value) {
                 return true;
             }
             currentNode = currentNode.next
@@ -137,3 +175,9 @@ module.exports = class LinkedList {
         return this;
     }
 }
+
+const list = new LinkedList();
+list.append(1);
+list.append(33);
+list.append(7);
+export default list;

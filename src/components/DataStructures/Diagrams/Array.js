@@ -11,11 +11,10 @@ const array = [
 
 class Array extends Component {
     render() {
-        console.log(squares)
         return (
             array.map((item, i) => {
                 return (
-                    <div className="array-item">
+                    <div className="array-item" key={i}>
                         <span className="array-index text-uppercase mr-lg-3 text-turquoise">{'Index: ' + (array.length - 1 - i)}</span>
                         <img
                             key={i}

@@ -22,11 +22,39 @@
     font-size: 1.4rem;
 }
 
-.isometric-square {
+.array-index {
+    font-size: 1.4rem;
+}
+
+.array .isometric-square {
     margin-bottom: -9%;
     margin-top: -9%;
 }
+/* Linked List */
 
+.linked-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.linked-list .isometric-square {
+    margin: 2.5%;
+}
+
+.head-pointer {
+    font-size: 1.6rem;
+    margin-top: 15%;
+    margin-bottom: -20%;
+    margin-left: -55%;
+}
+
+.tail-pointer {
+    font-size: 1.4rem;
+    margin-top: -20%;
+    margin-bottom: 15%;
+    margin-right: -55%;
+}
 /* Animations */
 
 @keyframes FadeIn {
