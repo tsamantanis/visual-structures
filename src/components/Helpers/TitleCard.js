@@ -3,7 +3,12 @@ import React, {Component} from 'react';
 class TitleCard extends Component {
     render() {
         return (
-            <div className={"card titleCard rounded mb-5 pt-2 pb-1 card-" + this.props.color}>
+            <div
+                className={"card titleCard rounded mb-5 pt-2 pb-1 card-"
+                + this.props.color
+                + (this.props.selected ? '--selected' : '')}
+                onClick={() => this.props.setSelected(this.props.title)}
+            >
                 <div className="row align-items-center">
                     <div className="col-12 pl-4">
                         <h3>{this.props.title}</h3>

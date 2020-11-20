@@ -2,6 +2,16 @@ import React, {Component} from 'react';
 import TitleCard from '../Helpers/TitleCard';
 import Grid from '../../assets/Grid.svg';
 class DataStructure extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            selected: 'ARRAY'
+        }
+    }
+
+    setSelected = (selected) => {
+        this.setState({selected});
+    }
     render() {
         return (
             <div className="row mt-5">
@@ -9,8 +19,11 @@ class DataStructure extends Component {
                     { this.props.dataStructures.map((structure) => {
                         return (
                             <TitleCard
+                                key={structure.title}
                                 title={structure.title}
                                 color={structure.color}
+                                selected={this.state.selected === structure.title}
+                                setSelected={this.setSelected}
                             />
                         );
                     })}
