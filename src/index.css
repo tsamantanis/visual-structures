@@ -43,6 +43,38 @@ h1, h2, h3, h4, h5, h6, p, span, button, a {
     font-weight: 600 !important;
 }
 
+/* Text Colors */
+
+.text-turquoise {
+    color: var(--turquoise) !important;
+}
+
+.text-light-blue {
+    color: var(--light-blue) !important;
+}
+
+.text-orange {
+    color: var(--orange) !important;
+}
+
+.text-red {
+    color: var(--red) !important;
+}
+
+.text-pink {
+    color: var(--pink) !important;
+}
+
+.text-raspberry {
+    color: var(--raspberry) !important;
+}
+
+.text-caribbean-green {
+    color: var(--caribbean-green) !important;
+}
+
+/* Cards */
+
 .titleCard {
     cursor: pointer !important;
     transition: 0.3s ease;

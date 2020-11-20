@@ -10,10 +10,16 @@
     overflow: hidden;
 }
 
+/* Array */
+
 .array {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
+}
+
+.array-index {
+    font-size: 1.4rem;
 }
 
 .isometric-square {
