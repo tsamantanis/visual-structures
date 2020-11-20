@@ -15,7 +15,7 @@ class Array extends Component {
         return (
             array.map((item, i) => {
                 return (
-                    <div>
+                    <div className="array-item">
                         <span className="array-index text-uppercase mr-lg-3 text-turquoise">{'Index: ' + (array.length - 1 - i)}</span>
                         <img
                             key={i}
