@@ -1,0 +1,22 @@
+.diagram {
+    min-width: 100%;
+    min-height: 102%;
+    max-width: 100%;
+    max-height: 102%;
+    margin-top: -100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.array {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.isometric-square {
+    margin-bottom: -9%;
+    margin-top: -9%;
+}

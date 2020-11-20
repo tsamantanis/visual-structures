@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import TitleCard from '../Helpers/TitleCard';
 import Grid from '../../assets/Grid.svg';
+import Diagram from './Diagrams/Diagram';
+
 class DataStructure extends Component {
     constructor(props) {
         super(props);
@@ -30,6 +32,9 @@ class DataStructure extends Component {
                     </div>
                 <div className="col-12 col-lg-8 offset-lg-1 text-white text-center">
                     <img src={Grid} className="img-fluid" alt="Diagram Grid"/>
+                    <Diagram
+                        selected={this.state.selected}
+                    />
                 </div>
             </div>
         );
