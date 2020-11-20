@@ -55,6 +55,12 @@
     margin-bottom: 15%;
     margin-right: -55%;
 }
+
+.gradient-dots {
+    position: absolute;
+    left: 49%;
+    padding-top: 25%;
+}
 /* Animations */
 
 @keyframes FadeIn {

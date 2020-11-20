@@ -1,4 +1,5 @@
 import squares from '../../Helpers/squares';
+import dots from '../../Helpers/dots';
 const Node = require('./Node.js');
 
 class LinkedList {
@@ -65,19 +66,26 @@ class LinkedList {
         while (currentNode !== null) {
             visuals.push(
                 <>
-                {currentNode === this.head ?
-                    <span className="head-pointer text-light-blue">HEAD</span>
-                : null }
-                <div className="linked-list-item" key={currentNode.data}>
-                    <img
-                        src={squares[index % this.getSize()]}
-                        className="isometric-square img-fluid"
-                        alt="Isometric square"
-                    />
-                </div>
-                {currentNode === this.tail ?
-                    <span className="tail-pointer text-light-blue">TAIL</span>
-                : null }
+                    {currentNode === this.head ?
+                        <span className="head-pointer text-light-blue">HEAD</span>
+                    : null }
+                    <div className="linked-list-item" key={currentNode.data}>
+                        <img
+                            src={squares[index % this.getSize()]}
+                            className="isometric-square img-fluid"
+                            alt="Isometric square"
+                        />
+                        {currentNode !== this.tail ?
+                            <img
+                                src={dots[index % this.getSize()]}
+                                className="gradient-dots"
+                                alt="Gradient dots"
+                            />
+                            : null }
+                    </div>
+                    {currentNode === this.tail ?
+                        <span className="tail-pointer text-light-blue">TAIL</span>
+                    : null }
                 </>
             );
             currentNode = currentNode.next;
