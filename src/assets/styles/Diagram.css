@@ -72,6 +72,8 @@
   }
 }
 
+/* Array Animations */
+
 .array .array-item {
     animation: FadeIn 1s ease;
     -webkit-animation-fill-mode: both;
@@ -99,6 +101,24 @@
     -webkit-animation-delay: 2.5s;
 }
 .array .array-item:nth-child(1) {
+    animation-delay: 3s;
+    -webkit-animation-delay: 3s
+}
+
+/* Linked List Animations */
+
+.linked-list .linked-list-item, .head-pointer, .tail-pointer {
+    animation: FadeIn 1s ease;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.linked-list .linked-list-item:nth-child(3) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s
+}
+
+.linked-list .linked-list-item:nth-child(4), .tail-pointer {
     animation-delay: 3s;
     -webkit-animation-delay: 3s
 }
