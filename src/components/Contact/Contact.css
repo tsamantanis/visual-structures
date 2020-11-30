@@ -1,0 +1,13 @@
+svg {
+    fill: white;
+    border-radius: 50%;
+    border: none;
+    transition: 0.5s ease;
+}
+
+svg:hover {
+    cursor: pointer;
+    background: var(--background) !important;
+    box-shadow: 4px -4px 22px #F94409, -4px -4px 22px #48E5C2, -4px 4px 22px #03A9F1, 4px 4px 22px #F18303 !important;
+    -webkit-box-shadow: 4px -4px 22px #F94409, -4px -4px 22px #48E5C2, -4px 4px 22px #03A9F1, 4px 4px 22px #F18303 !important;
+}

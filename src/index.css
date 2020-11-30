@@ -221,3 +221,10 @@ h1, h2, h3, h4, h5, h6, p, span, button, a {
     -webkit-box-shadow: var(--caribbean-green--shadow) !important;
     -webkit-appearance: none;
 }
+
+.container {
+    text-transform: uppercase;
+}
+.full-page .row {
+    height: 60vh !important;
+}

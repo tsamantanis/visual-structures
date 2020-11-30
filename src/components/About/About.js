@@ -1,12 +1,10 @@
 import React, {Component} from 'react';
 import Navigation from '../Navigation/Navigation';
 
-import './About.css';
-
 class About extends Component {
     render() {
         return (
-            <div className="container about">
+            <div className="container full-page">
                 <Navigation />
                 <div className="row justify-content-center align-items-center mt-lg-5">
                     <div className="col-12 col-lg-6">
