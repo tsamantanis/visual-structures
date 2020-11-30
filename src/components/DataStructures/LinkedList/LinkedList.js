@@ -1,5 +1,7 @@
+import React from 'react';
 import squares from '../../Helpers/squares';
 import dots from '../../Helpers/dots';
+import SVGInline from '../../Helpers/SVGInline';
 const Node = require('./Node.js');
 
 class LinkedList {
@@ -65,7 +67,7 @@ class LinkedList {
         let index = 0;
         while (currentNode !== null) {
             visuals.push(
-                <>
+                <React.Fragment key={currentNode.data}>
                     {currentNode === this.head ?
                         <span className="head-pointer text-light-blue">HEAD</span>
                     : null }
@@ -76,17 +78,16 @@ class LinkedList {
                             alt="Isometric square"
                         />
                         {currentNode !== this.tail ?
-                            <img
-                                src={dots[index % this.getSize()]}
+                            <SVGInline
+                                url={dots[index % this.getSize()]}
                                 className="gradient-dots"
-                                alt="Gradient dots"
                             />
                             : null }
                     </div>
                     {currentNode === this.tail ?
                         <span className="tail-pointer text-light-blue">TAIL</span>
                     : null }
-                </>
+                </React.Fragment>
             );
             currentNode = currentNode.next;
             index += 1;
