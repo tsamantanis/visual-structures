@@ -2,7 +2,8 @@ import React from 'react';
 import squares from '../../Helpers/squares';
 import dots from '../../Helpers/dots';
 import SVGInline from '../../Helpers/SVGInline';
-const Node = require('./Node.js');
+// const Node = require('./Node.js');
+import Node from './Node';
 
 class LinkedList {
     constructor() {
