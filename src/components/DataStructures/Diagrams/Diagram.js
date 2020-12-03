@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Array from './Array';
 import LinkedListDiagram from './LinkedList';
 import QueueDiagram from './QueueDiagram';
+import Stack from '../Stack/StackArray';
 import '../../../assets/styles/Diagram.css';
 class Diagram extends Component {
     render() {
