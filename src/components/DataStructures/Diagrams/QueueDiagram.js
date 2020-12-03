@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import squares from '../../Helpers/squares';
-import LinkedList from '../LinkedList/LinkedList.js';
+import QueueLinkedList from '../Queue/QueueLinkedList.js';
 
-const list = new LinkedList();
-list.append(1);
-list.append(33);
-list.append(7);
+const list = new QueueLinkedList();
+list.enqueue(1);
+list.enqueue(33);
+list.enqueue(7);
 class LinkedListDiagram extends Component {
     constructor(props) {
         super(props);

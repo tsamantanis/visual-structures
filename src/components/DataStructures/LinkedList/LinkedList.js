@@ -186,8 +186,4 @@ class LinkedList {
     }
 }
 
-const list = new LinkedList();
-list.append(1);
-list.append(33);
-list.append(7);
-export default list;
+export default LinkedList;

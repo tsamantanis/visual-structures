@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Array from './Array';
 import LinkedListDiagram from './LinkedList';
-
+import QueueDiagram from './QueueDiagram';
 import '../../../assets/styles/Diagram.css';
 class Diagram extends Component {
     render() {
@@ -16,6 +16,11 @@ class Diagram extends Component {
                     this.props.selected === 'LINKED LIST' ?
                         <div className="linked-list">
                             <LinkedListDiagram />
+                        </div>
+                    :
+                    this.props.selected === 'QUEUE' ?
+                        <div className="linked-list">
+                            <QueueDiagram />
                         </div>
                     : null
                 }
