@@ -1,12 +1,12 @@
 import React, {Component} from 'react';
 import squares from '../../Helpers/squares';
-import QueueLinkedList from '../Queue/QueueLinkedList.js';
+import StackLinkedList from '../Stack/StackLinkedList.js';
 
-const list = new QueueLinkedList();
-list.enqueue(1);
-list.enqueue(33);
-list.enqueue(7);
-class QueueDiagram extends Component {
+const list = new StackLinkedList();
+list.push(1);
+list.push(33);
+list.push(7);
+class StackDiagram extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -21,4 +21,4 @@ class QueueDiagram extends Component {
     }
 }
 
-export default QueueDiagram;
+export default StackDiagram;

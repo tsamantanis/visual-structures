@@ -1,4 +1,3 @@
-import React from 'react';
 import LinkedList from '../LinkedList/LinkedList';
 
 class QueueLinkedList extends LinkedList {

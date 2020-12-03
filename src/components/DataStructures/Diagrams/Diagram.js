@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Array from './Array';
 import LinkedListDiagram from './LinkedList';
 import QueueDiagram from './QueueDiagram';
-import Stack from '../Stack/StackArray';
+import StackDiagram from './StackDiagram';
 import '../../../assets/styles/Diagram.css';
 class Diagram extends Component {
     render() {
@@ -22,6 +22,11 @@ class Diagram extends Component {
                     this.props.selected === 'QUEUE' ?
                         <div className="linked-list">
                             <QueueDiagram />
+                        </div>
+                    :
+                    this.props.selected === 'STACK' ?
+                        <div className="linked-list">
+                            <StackDiagram />
                         </div>
                     : null
                 }
