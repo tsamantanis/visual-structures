@@ -20,12 +20,12 @@ class Diagram extends Component {
                         </div>
                     :
                     this.props.selected === 'QUEUE' ?
-                        <div className="linked-list">
+                        <div className="queue">
                             <QueueDiagram />
                         </div>
                     :
                     this.props.selected === 'STACK' ?
-                        <div className="linked-list">
+                        <div className="stack">
                             <StackDiagram />
                         </div>
                     : null
