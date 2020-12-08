@@ -20,18 +20,9 @@
   </a>
 
   </br>
-
-  <a href="https://github.com/visual-structures/visual-structures#contribute" target="_blank">
-    <img alt="Contributors" src="https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square">
-  </a>
-
   <a href="https://standardjs.com" target="_blank">
     <img alt="ESLint" src="https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square">
   </a>
-
-  <a href="https://github.com/visual-structures/visual-structures/blob/master/LICENSE" target="_blank">
-    <img alt="LICENSE" src="https://img.shields.io/github/license/tsamantanis/visual-structures?style=flat-square&color=yellow">
-  <a/>
 </p>
 <hr>
 
