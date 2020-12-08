@@ -37,6 +37,9 @@ Implementation and visual representation of commonly used data structures.
 - [Installation](#installation)
 - [Usage](#usage)
 
+# Demo Preview
+[Demo](https://tsamantanis.github.io/visual-structures/)
+
 # Installation
 [(Back to top)](#table-of-contents)
 
