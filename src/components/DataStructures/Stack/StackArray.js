@@ -22,6 +22,6 @@ const stack = new StackArray();
 stack.push(3);
 stack.push(2);
 stack.push(1);
-stack.pop()
+stack.pop();
 
 export default StackArray;

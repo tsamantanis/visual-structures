@@ -1,9 +1,9 @@
-import Isometric_Square_turquoise from '../../assets/Isometric_Square_turquoise.svg'
-import Isometric_Square_light_blue from '../../assets/Isometric_Square_light-blue.svg'
-import Isometric_Square_orange from '../../assets/Isometric_Square_orange.svg'
-import Isometric_Square_red from '../../assets/Isometric_Square_red.svg'
-import Isometric_Square_pink from '../../assets/Isometric_Square_pink.svg'
-import Isometric_Square_raspberry from '../../assets/Isometric_Square_raspberry.svg'
+import Isometric_Square_turquoise from "../../assets/Isometric_Square_turquoise.svg";
+import Isometric_Square_light_blue from "../../assets/Isometric_Square_light-blue.svg";
+import Isometric_Square_orange from "../../assets/Isometric_Square_orange.svg";
+import Isometric_Square_red from "../../assets/Isometric_Square_red.svg";
+import Isometric_Square_pink from "../../assets/Isometric_Square_pink.svg";
+import Isometric_Square_raspberry from "../../assets/Isometric_Square_raspberry.svg";
 // import Isometric_Square_caribbean_green from '../../assets/Isometric_Square_caribbean-green.svg'
 
 const squares = [

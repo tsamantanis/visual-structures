@@ -5,7 +5,7 @@ class QueueArray {
 
     enqueue(item) {
         if (this.items.length > 0) {
-            let k = this.items.length
+            let k = this.items.length;
             while (k > 0) {
                 this.items[k] = this.items[k - 1];
                 k -= 1;
@@ -14,7 +14,7 @@ class QueueArray {
         } else {
             this.items.push(item);
         }
-        return this.items
+        return this.items;
     }
 
     dequeue() {
@@ -27,8 +27,7 @@ class QueueArray {
         });
     }
 
-    displayQueueArray() {
-    }
+    displayQueueArray() {}
 }
 
 const queue = new QueueArray();

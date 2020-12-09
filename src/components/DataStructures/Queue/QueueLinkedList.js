@@ -1,8 +1,8 @@
-import LinkedList from '../LinkedList/LinkedList';
+import LinkedList from "../LinkedList/LinkedList";
 
 class QueueLinkedList extends LinkedList {
     constructor(props) {
-        super(props)
+        super(props);
     }
 
     enqueue(newData) {

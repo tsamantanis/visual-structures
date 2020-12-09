@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import squares from '../../Helpers/squares';
-import QueueLinkedList from '../Queue/QueueLinkedList.js';
+import React, { Component } from "react";
+import squares from "../../Helpers/squares";
+import QueueLinkedList from "../Queue/QueueLinkedList.js";
 
 const list = new QueueLinkedList();
 list.enqueue(1);
@@ -11,13 +11,11 @@ class QueueDiagram extends Component {
         super(props);
         this.state = {
             list: list,
-        }
+        };
     }
 
     render() {
-        return (
-            this.state.list.displayList()
-        );
+        return this.state.list.displayList();
     }
 }
 

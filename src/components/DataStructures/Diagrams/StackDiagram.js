@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import squares from '../../Helpers/squares';
-import StackLinkedList from '../Stack/StackLinkedList.js';
+import React, { Component } from "react";
+import squares from "../../Helpers/squares";
+import StackLinkedList from "../Stack/StackLinkedList.js";
 
 const list = new StackLinkedList();
 list.push(1);
@@ -11,13 +11,11 @@ class StackDiagram extends Component {
         super(props);
         this.state = {
             list: list,
-        }
+        };
     }
 
     render() {
-        return (
-            this.state.list.displayList()
-        );
+        return this.state.list.displayList();
     }
 }
 

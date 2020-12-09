@@ -77,12 +77,12 @@
 /* Animations */
 
 @keyframes FadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @keyframes FadeInOut {
@@ -137,7 +137,7 @@
 
 .array .array-item:nth-child(6) {
     animation-delay: .;
-    -webkit-animation-delay: .5s
+    -webkit-animation-delay: 0.5s;
 }
 .array .array-item:nth-child(5) {
     animation-delay: 1s;
@@ -145,7 +145,7 @@
 }
 .array .array-item:nth-child(4) {
     animation-delay: 1;
-    -webkit-animation-delay: 1.5s
+    -webkit-animation-delay: 1.5s;
 }
 .array .array-item:nth-child(3) {
     animation-delay: 2s;
@@ -157,12 +157,14 @@
 }
 .array .array-item:nth-child(1) {
     animation-delay: 3s;
-    -webkit-animation-delay: 3s
+    -webkit-animation-delay: 3s;
 }
 
 /* Linked List Animations */
 
-.linked-list .linked-list-item, .head-pointer, .tail-pointer {
+.linked-list .linked-list-item,
+.head-pointer,
+.tail-pointer {
     animation: FadeIn 1s ease;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
@@ -170,12 +172,13 @@
 
 .linked-list .linked-list-item:nth-child(3) {
     animation-delay: 1s;
-    -webkit-animation-delay: 1s
+    -webkit-animation-delay: 1s;
 }
 
-.linked-list .linked-list-item:nth-child(4), .tail-pointer {
+.linked-list .linked-list-item:nth-child(4),
+.tail-pointer {
     animation-delay: 3s;
-    -webkit-animation-delay: 3s
+    -webkit-animation-delay: 3s;
 }
 
 /* Stack Animations */
@@ -210,7 +213,8 @@
     -webkit-animation-delay: 1s;
 }
 
-.stack .stack-item:nth-child(4), .tail-pointer {
+.stack .stack-item:nth-child(4),
+.tail-pointer {
     animation: FadeIn 1s ease;
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;

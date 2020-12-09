@@ -1,24 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap");
 
 :root {
     /* Color styles */
     --background: #303234;
-    --turquoise: #48E5C2;
-    --light-blue: #03A9F1;
-    --orange: #F18303;
-    --red: #F94409;
-    --pink: #E85D75;
-    --raspberry: #DD1155;
-    --caribbean-green: #06D6A0;
-    --malachite: #53DD6C;
-    --turqoise-desat: #C9F8ED;
-    --light-blue-desat: #B4E6FB;
-    --orange-desat: #FBDAB4;
-    --red-desat: #FEC7B6;
-    --pink-desat: #F9CFD6;
-    --raspberry-desat: #F5B8CC;
-    --caribbean-green-desat: #B5F3E3;
-    --malachite-desat: #CCF5D3;
+    --turquoise: #48e5c2;
+    --light-blue: #03a9f1;
+    --orange: #f18303;
+    --red: #f94409;
+    --pink: #e85d75;
+    --raspberry: #dd1155;
+    --caribbean-green: #06d6a0;
+    --malachite: #53dd6c;
+    --turqoise-desat: #c9f8ed;
+    --light-blue-desat: #b4e6fb;
+    --orange-desat: #fbdab4;
+    --red-desat: #fec7b6;
+    --pink-desat: #f9cfd6;
+    --raspberry-desat: #f5b8cc;
+    --caribbean-green-desat: #b5f3e3;
+    --malachite-desat: #ccf5d3;
 
     /* Effect styles */
     --turquoise--shadow: 4px 4px 22px rgba(72, 229, 194, 1);
@@ -31,15 +31,24 @@
 }
 
 body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: var(--background) !important;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: var(--background) !important;
 }
 
-h1, h2, h3, h4, h5, h6, p, span, button, a {
-    font-family: 'Nunito', sans-serif !important;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+button,
+a {
+    font-family: "Nunito", sans-serif !important;
     font-weight: 600 !important;
 }
 

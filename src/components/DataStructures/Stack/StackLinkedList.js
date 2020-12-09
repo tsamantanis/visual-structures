@@ -1,8 +1,8 @@
-import React from 'react';
-import LinkedList from '../LinkedList/LinkedList';
-import squares from '../../Helpers/squares';
-import dots from '../../Helpers/dots';
-import SVGInline from '../../Helpers/SVGInline';
+import React from "react";
+import LinkedList from "../LinkedList/LinkedList";
+import squares from "../../Helpers/squares";
+import dots from "../../Helpers/dots";
+import SVGInline from "../../Helpers/SVGInline";
 
 class StackLinkedList extends LinkedList {
     constructor(props) {
@@ -24,28 +24,34 @@ class StackLinkedList extends LinkedList {
         while (currentNode !== null) {
             visuals.push(
                 <React.Fragment key={currentNode.data}>
-                    {currentNode === this.head ?
+                    {currentNode === this.head ? (
                         <React.Fragment>
-                            <span className="head-pointer push-pointer text-light-blue">PUSH</span>
-                            <span className="head-pointer pop-pointer text-light-blue">POP</span>
+                            <span className="head-pointer push-pointer text-light-blue">
+                                PUSH
+                            </span>
+                            <span className="head-pointer pop-pointer text-light-blue">
+                                POP
+                            </span>
                         </React.Fragment>
-                    : null }
+                    ) : null}
                     <div className="stack-item" key={currentNode.data}>
                         <img
                             src={squares[index % this.getSize()]}
                             className="isometric-square img-fluid"
                             alt="Isometric square"
                         />
-                        {currentNode !== this.tail ?
+                        {currentNode !== this.tail ? (
                             <SVGInline
                                 url={dots[index % this.getSize()]}
                                 className="gradient-dots"
                             />
-                            : null }
+                        ) : null}
                     </div>
-                    {currentNode === this.tail ?
-                        <span className="tail-pointer text-light-blue">TAIL</span>
-                    : null }
+                    {currentNode === this.tail ? (
+                        <span className="tail-pointer text-light-blue">
+                            TAIL
+                        </span>
+                    ) : null}
                 </React.Fragment>
             );
             currentNode = currentNode.next;
@@ -59,6 +65,6 @@ const stack = new StackLinkedList();
 stack.push(3);
 stack.push(2);
 stack.push(1);
-stack.pop()
+stack.pop();
 
 export default StackLinkedList;

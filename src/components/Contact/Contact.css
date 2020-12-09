@@ -8,6 +8,8 @@ svg {
 svg:hover {
     cursor: pointer;
     background: var(--background) !important;
-    box-shadow: 4px -4px 22px #F94409, -4px -4px 22px #48E5C2, -4px 4px 22px #03A9F1, 4px 4px 22px #F18303 !important;
-    -webkit-box-shadow: 4px -4px 22px #F94409, -4px -4px 22px #48E5C2, -4px 4px 22px #03A9F1, 4px 4px 22px #F18303 !important;
+    box-shadow: 4px -4px 22px #f94409, -4px -4px 22px #48e5c2,
+        -4px 4px 22px #03a9f1, 4px 4px 22px #f18303 !important;
+    -webkit-box-shadow: 4px -4px 22px #f94409, -4px -4px 22px #48e5c2,
+        -4px 4px 22px #03a9f1, 4px 4px 22px #f18303 !important;
 }

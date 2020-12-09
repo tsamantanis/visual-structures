@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
-import squares from '../../Helpers/squares';
-import LinkedList from '../LinkedList/LinkedList.js';
+import React, { Component } from "react";
+import squares from "../../Helpers/squares";
+import LinkedList from "../LinkedList/LinkedList.js";
 
 const list = new LinkedList();
 list.append(1);
@@ -11,13 +11,11 @@ class LinkedListDiagram extends Component {
         super(props);
         this.state = {
             list: list,
-        }
+        };
     }
 
     render() {
-        return (
-            this.state.list.displayList()
-        );
+        return this.state.list.displayList();
     }
 }
 

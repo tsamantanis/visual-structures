@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Navigation from '../Navigation/Navigation';
+import React, { Component } from "react";
+import Navigation from "../Navigation/Navigation";
 
 class About extends Component {
     render() {
@@ -13,16 +13,14 @@ class About extends Component {
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Nulla cursus nec eros in dictum. Curabitur
                             ultrices at nulla in elementum. Suspendisse pulvinar
-                             commodo volutpat. Vivamus fringilla dui ut dui
-                             congue fermentum. Ut eleifend mi leo. Integer
-                             dapibus arcu nec risus tempus luctus. Vivamus
-                             suscipit magna non quam suscipit, consequat
-                             eleifend magna ornare.
+                            commodo volutpat. Vivamus fringilla dui ut dui
+                            congue fermentum. Ut eleifend mi leo. Integer
+                            dapibus arcu nec risus tempus luctus. Vivamus
+                            suscipit magna non quam suscipit, consequat eleifend
+                            magna ornare.
                         </p>
                     </div>
-                    <div className="col-12 col-lg-6">
-
-                    </div>
+                    <div className="col-12 col-lg-6"></div>
                 </div>
             </div>
         );

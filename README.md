@@ -28,33 +28,34 @@
 
 Implementation and visual representation of commonly used data structures.
 
-
 # Table of contents
 
-- [Project Title](#project-title)
-- [Demo-Preview](#demo-preview)
-- [Table of contents](#table-of-contents)
-- [Installation](#installation)
-- [Usage](#usage)
+-   [Project Title](#project-title)
+-   [Demo-Preview](#demo-preview)
+-   [Table of contents](#table-of-contents)
+-   [Installation](#installation)
+-   [Usage](#usage)
 
 # Demo Preview
+
 [Demo](https://tsamantanis.github.io/visual-structures/)
 
 # Installation
-[(Back to top)](#table-of-contents)
 
+[(Back to top)](#table-of-contents)
 
 To use this project, first clone the repo on your device using the commands below:
 
-```git init```
+`git init`
 
-```git clone https://github.com/tsamantanis/visual-structures.git```
+`git clone https://github.com/tsamantanis/visual-structures.git`
 
-```cd visual-structures```
+`cd visual-structures`
 
-```npm install```
+`npm install`
 
 # Usage
+
 [(Back to top)](#table-of-contents)
 
-```npm run start```
+`npm run start`

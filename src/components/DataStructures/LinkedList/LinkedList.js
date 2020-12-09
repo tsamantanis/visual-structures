@@ -1,9 +1,9 @@
-import React from 'react';
-import squares from '../../Helpers/squares';
-import dots from '../../Helpers/dots';
-import SVGInline from '../../Helpers/SVGInline';
+import React from "react";
+import squares from "../../Helpers/squares";
+import dots from "../../Helpers/dots";
+import SVGInline from "../../Helpers/SVGInline";
 // const Node = require('./Node.js');
-import Node from './Node';
+import Node from "./Node";
 
 class LinkedList {
     constructor() {
@@ -44,7 +44,7 @@ class LinkedList {
     }
 
     isEmpty() {
-        return (this.head === null);
+        return this.head === null;
     }
 
     printList() {
@@ -69,25 +69,29 @@ class LinkedList {
         while (currentNode !== null) {
             visuals.push(
                 <React.Fragment key={currentNode.data}>
-                    {currentNode === this.head ?
-                        <span className="head-pointer text-light-blue">HEAD</span>
-                    : null }
+                    {currentNode === this.head ? (
+                        <span className="head-pointer text-light-blue">
+                            HEAD
+                        </span>
+                    ) : null}
                     <div className="linked-list-item" key={currentNode.data}>
                         <img
                             src={squares[index % this.getSize()]}
                             className="isometric-square img-fluid"
                             alt="Isometric square"
                         />
-                        {currentNode !== this.tail ?
+                        {currentNode !== this.tail ? (
                             <SVGInline
                                 url={dots[index % this.getSize()]}
                                 className="gradient-dots"
                             />
-                            : null }
+                        ) : null}
                     </div>
-                    {currentNode === this.tail ?
-                        <span className="tail-pointer text-light-blue">TAIL</span>
-                    : null }
+                    {currentNode === this.tail ? (
+                        <span className="tail-pointer text-light-blue">
+                            TAIL
+                        </span>
+                    ) : null}
                 </React.Fragment>
             );
             currentNode = currentNode.next;
@@ -109,10 +113,9 @@ class LinkedList {
         let currentNode = this.head;
         while (currentNode != null) {
             size += 1;
-            currentNode = currentNode.next
+            currentNode = currentNode.next;
         }
         return size;
-
     }
 
     search(value) {
@@ -121,7 +124,7 @@ class LinkedList {
             if (currentNode.data === value) {
                 return true;
             }
-            currentNode = currentNode.next
+            currentNode = currentNode.next;
         }
         return false;
     }
@@ -151,7 +154,7 @@ class LinkedList {
         if (this.head.data === value) {
             this.deleteFromHead();
         } else if (this.tail.data === value) {
-            this.deleteFromTail()
+            this.deleteFromTail();
         }
 
         let currentNode = this.head;
@@ -177,10 +180,9 @@ class LinkedList {
         }
         if (this.tail !== null) {
             const tempNode = this.tail.prev;
-            tempNode.next = null
+            tempNode.next = null;
             this.tail.prev = null;
             this.tail = tempNode;
-
         }
         return this;
     }
