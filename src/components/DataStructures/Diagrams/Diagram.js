@@ -3,6 +3,7 @@ import Array from "./Array";
 import LinkedListDiagram from "./LinkedList";
 import QueueDiagram from "./QueueDiagram";
 import StackDiagram from "./StackDiagram";
+import GraphDiagram from './GraphDiagram';
 import "../../../assets/styles/Diagram.css";
 class Diagram extends Component {
     render() {
@@ -23,6 +24,10 @@ class Diagram extends Component {
                 ) : this.props.selected === "STACK" ? (
                     <div className="stack">
                         <StackDiagram />
+                    </div>
+                ) : this.props.selected === "GRAPH" ? (
+                    <div className="graph">
+                        <GraphDiagram />
                     </div>
                 ) : null}
             </div>

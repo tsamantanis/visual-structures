@@ -1,11 +1,13 @@
 class Vertex {
-    constructor(data) {
+    constructor(id, data) {
         this.id = id
         this.data = data
-        this.neighbors = {}
+        this.neighbors = []
     }
 
     addNeighbor(vertex) {
         this.neighbors[vertex.id] = vertex
     }
 }
+
+export default Vertex;

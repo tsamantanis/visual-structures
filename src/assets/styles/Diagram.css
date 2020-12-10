@@ -74,6 +74,16 @@
     margin: 2.5%;
 }
 
+/* Graph */
+
+.graph {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+
+}
+
 /* Animations */
 
 @keyframes FadeIn {
