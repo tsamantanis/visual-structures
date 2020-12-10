@@ -1,11 +1,11 @@
-svg {
+a svg {
     fill: white;
     border-radius: 50%;
     border: none;
     transition: 0.5s ease;
 }
 
-svg:hover {
+a svg:hover {
     cursor: pointer;
     background: var(--background) !important;
     box-shadow: 4px -4px 22px #f94409, -4px -4px 22px #48e5c2,
