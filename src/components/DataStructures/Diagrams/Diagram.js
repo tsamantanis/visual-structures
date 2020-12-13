@@ -3,6 +3,7 @@ import Array from "./Array";
 import LinkedListDiagram from "./LinkedList";
 import QueueDiagram from "./QueueDiagram";
 import StackDiagram from "./StackDiagram";
+import BinaryTreeDiagram from "./BinaryTreeDiagram";
 import HashmapDiagram from "./HashmapDiagram";
 import GraphDiagram from './GraphDiagram';
 import "../../../assets/styles/Diagram.css";
@@ -28,6 +29,8 @@ class Diagram extends Component {
                     </div>
                 ) : this.props.selected === "HASHMAP" ? (
                         <HashmapDiagram />
+                ) : this.props.selected === "BINARY TREE" ? (
+                        <BinaryTreeDiagram />
                 ) : this.props.selected === "GRAPH" ? (
                     <div className="graph">
                         <GraphDiagram />
