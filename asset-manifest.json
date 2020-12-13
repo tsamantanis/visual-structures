@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/visual-structures/static/css/main.ce8bb650.chunk.css",
-    "main.js": "/visual-structures/static/js/main.1dc21fa1.chunk.js",
-    "main.js.map": "/visual-structures/static/js/main.1dc21fa1.chunk.js.map",
+    "main.js": "/visual-structures/static/js/main.36215d2c.chunk.js",
+    "main.js.map": "/visual-structures/static/js/main.36215d2c.chunk.js.map",
     "runtime-main.js": "/visual-structures/static/js/runtime-main.2ca134ab.js",
     "runtime-main.js.map": "/visual-structures/static/js/runtime-main.2ca134ab.js.map",
     "static/css/2.1a02f21c.chunk.css": "/visual-structures/static/css/2.1a02f21c.chunk.css",
@@ -24,6 +24,7 @@
     "static/media/Isometric_Square_raspberry.8161bcda.svg": "/visual-structures/static/media/Isometric_Square_raspberry.8161bcda.svg",
     "static/media/Isometric_Square_red.19dbf5cb.svg": "/visual-structures/static/media/Isometric_Square_red.19dbf5cb.svg",
     "static/media/Isometric_Square_turquoise.561b4571.svg": "/visual-structures/static/media/Isometric_Square_turquoise.561b4571.svg",
+    "static/media/Linked List Visual.1ada8853.svg": "/visual-structures/static/media/Linked List Visual.1ada8853.svg",
     "static/media/Queue Array Visual.e833bb2f.svg": "/visual-structures/static/media/Queue Array Visual.e833bb2f.svg",
     "static/media/Stack Array Visual.ce2f26e5.svg": "/visual-structures/static/media/Stack Array Visual.ce2f26e5.svg"
   },
@@ -32,6 +33,6 @@
     "static/css/2.1a02f21c.chunk.css",
     "static/js/2.d1e0779e.chunk.js",
     "static/css/main.ce8bb650.chunk.css",
-    "static/js/main.1dc21fa1.chunk.js"
+    "static/js/main.36215d2c.chunk.js"
   ]
 }
