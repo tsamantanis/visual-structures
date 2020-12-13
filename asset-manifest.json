@@ -1,19 +1,20 @@
 {
   "files": {
     "main.css": "/visual-structures/static/css/main.ce8bb650.chunk.css",
-    "main.js": "/visual-structures/static/js/main.e368819d.chunk.js",
-    "main.js.map": "/visual-structures/static/js/main.e368819d.chunk.js.map",
+    "main.js": "/visual-structures/static/js/main.07aee5ca.chunk.js",
+    "main.js.map": "/visual-structures/static/js/main.07aee5ca.chunk.js.map",
     "runtime-main.js": "/visual-structures/static/js/runtime-main.2ca134ab.js",
     "runtime-main.js.map": "/visual-structures/static/js/runtime-main.2ca134ab.js.map",
     "static/css/2.1a02f21c.chunk.css": "/visual-structures/static/css/2.1a02f21c.chunk.css",
-    "static/js/2.d1e0779e.chunk.js": "/visual-structures/static/js/2.d1e0779e.chunk.js",
-    "static/js/2.d1e0779e.chunk.js.map": "/visual-structures/static/js/2.d1e0779e.chunk.js.map",
+    "static/js/2.e2537a61.chunk.js": "/visual-structures/static/js/2.e2537a61.chunk.js",
+    "static/js/2.e2537a61.chunk.js.map": "/visual-structures/static/js/2.e2537a61.chunk.js.map",
     "static/js/3.abf50625.chunk.js": "/visual-structures/static/js/3.abf50625.chunk.js",
     "static/js/3.abf50625.chunk.js.map": "/visual-structures/static/js/3.abf50625.chunk.js.map",
     "index.html": "/visual-structures/index.html",
     "static/css/2.1a02f21c.chunk.css.map": "/visual-structures/static/css/2.1a02f21c.chunk.css.map",
     "static/css/main.ce8bb650.chunk.css.map": "/visual-structures/static/css/main.ce8bb650.chunk.css.map",
-    "static/js/2.d1e0779e.chunk.js.LICENSE.txt": "/visual-structures/static/js/2.d1e0779e.chunk.js.LICENSE.txt",
+    "static/js/2.e2537a61.chunk.js.LICENSE.txt": "/visual-structures/static/js/2.e2537a61.chunk.js.LICENSE.txt",
+    "static/media/Binary Tree Visual.494edefc.svg": "/visual-structures/static/media/Binary Tree Visual.494edefc.svg",
     "static/media/Gradient_1_Dots.a7bdf11a.svg": "/visual-structures/static/media/Gradient_1_Dots.a7bdf11a.svg",
     "static/media/Gradient_2_Dots.49be8007.svg": "/visual-structures/static/media/Gradient_2_Dots.49be8007.svg",
     "static/media/Graph Visual.60d32015.svg": "/visual-structures/static/media/Graph Visual.60d32015.svg",
@@ -32,8 +33,8 @@
   "entrypoints": [
     "static/js/runtime-main.2ca134ab.js",
     "static/css/2.1a02f21c.chunk.css",
-    "static/js/2.d1e0779e.chunk.js",
+    "static/js/2.e2537a61.chunk.js",
     "static/css/main.ce8bb650.chunk.css",
-    "static/js/main.e368819d.chunk.js"
+    "static/js/main.07aee5ca.chunk.js"
   ]
 }
