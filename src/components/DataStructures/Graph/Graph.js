@@ -37,10 +37,10 @@ class Graph {
 
     displayGraph() {
         return (
-            <div className="row">
+            <div className="row justify-content-center">
                 { this.vertices.map((vertex, index) => {
                     return (
-                        <div className="col-4" key={vertex.id}>
+                        <div className="col-3 mt-5 ml-5 mr-5 fadeIn" key={vertex.id}>
                             <div className="graph-item" key={vertex.data}>
                                 <img
                                     src={squares[index % this.vertices.length]}
@@ -48,6 +48,14 @@ class Graph {
                                     alt="Isometric square"
                                 />
                             </div>
+                            { vertex.neighbors.map((neightbor, index) => {
+                                return (
+                                    <SVGInline
+                                        url={dots[1]}
+                                        className="gradient-dots"
+                                    />
+                                )
+                            })}
                         </div>
                 )})}
             </div>

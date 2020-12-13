@@ -234,3 +234,48 @@
     animation-delay: 2s;
     -webkit-animation-delay: 2s
 } */
+
+/* Graph Animations */
+
+.fadeIn {
+    opacity: 0;
+    -webkit-animation: FadeIn 1s ease;
+    animation: FadeIn 1s ease;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.fadeIn:nth-child(2n + 1) {
+    animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+}
+
+.fadeIn:nth-child(2n + 2) {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+.fadeIn:nth-child(2n + 3) {
+    animation-delay: 1.5s;
+    -webkit-animation-delay: 1.5s;
+}
+
+.fadeIn:nth-child(2n + 4) {
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+}
+
+.fadeIn:nth-child(2n + 5) {
+    animation-delay: 2.5s;
+    -webkit-animation-delay: 2.5s;
+}
+
+.graph .row .gradient-dots:nth-child(2n + 2) {
+    margin-left: -0.2rem !important;
+}
+
+.graph .row .gradient-dots:nth-child(2n + 1) {
+    transform: rotate(90deg);
+    margin-top: -75%;
+
+}
