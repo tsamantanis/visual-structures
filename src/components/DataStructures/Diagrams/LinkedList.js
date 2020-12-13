@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import squares from "../../Helpers/squares";
 import LinkedList from "../LinkedList/LinkedList.js";
+import LinkedListSVG from '../../../assets/Linked List Visual.svg';
 
 const list = new LinkedList();
 list.append(1);
@@ -15,7 +16,13 @@ class LinkedListDiagram extends Component {
     }
 
     render() {
-        return this.state.list.displayList();
+        return (
+            <div className="row justify-content-center align-items-center">
+                <div className="col-8 col-lg-4">
+                    <img className="img-fluid" src={ LinkedListSVG } alt="Linked List SVG animation" />
+                </div>
+            </div>
+        )
     }
 }
 
