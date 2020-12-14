@@ -10,15 +10,11 @@ binaryTree.insert(17);
 binaryTree.insert(25);
 
 console.log(binaryTree.search(10).data);
-
+binaryTree.inorder(binaryTree.root);
+binaryTree.preorder(binaryTree.root);
+binaryTree.postorder(binaryTree.root);
 
 class BinaryTreeDiagram extends Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //
-    //     };
-    // }
 
     render() {
         return (

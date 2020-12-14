@@ -81,6 +81,32 @@ class BSTree {
         else
             return bstNode;
     }
+
+    // Tree traversals
+
+    inorder(bstNode) {
+        if(bstNode !== null) {
+            this.inorder(bstNode.left);
+            console.log(bstNode.data);
+            this.inorder(bstNode.right);
+        }
+    }
+
+    preorder(bstNode) {
+        if(bstNode !== null) {
+            console.log(bstNode.data);
+            this.preorder(bstNode.left);
+            this.preorder(bstNode.right);
+        }
+    }
+
+    postorder(bstNode) {
+        if(bstNode !== null) {
+            this.postorder(bstNode.left); 
+            this.postorder(bstNode.right); 
+            console.log(bstNode.data);
+        }
+    }
 }
 
 export default BSTree;
