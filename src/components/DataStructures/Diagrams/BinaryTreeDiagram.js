@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import BinaryTree from '../BinaryTree/BSTree';
-import BinaryTreeSVG from '../../../assets/Binary Tree Visual.svg';
+import BinaryTree from "../BinaryTree/BSTree";
+import BinaryTreeSVG from "../../../assets/Binary Tree Visual.svg";
 
 const binaryTree = new BinaryTree();
 binaryTree.insert(15);
@@ -15,15 +15,18 @@ binaryTree.preorder(binaryTree.root);
 binaryTree.postorder(binaryTree.root);
 
 class BinaryTreeDiagram extends Component {
-
     render() {
         return (
             <div className="row justify-content-center align-items-center">
                 <div className="col-12">
-                    <img className="img-fluid" src={ BinaryTreeSVG } alt="Binary Tree SVG animation" />
+                    <img
+                        className="img-fluid"
+                        src={BinaryTreeSVG}
+                        alt="Binary Tree SVG animation"
+                    />
                 </div>
             </div>
-        )
+        );
     }
 }
 

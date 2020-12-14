@@ -1,4 +1,4 @@
-import BSTNode from './BSTNode';
+import BSTNode from "./BSTNode";
 
 class BSTree {
     constructor() {
@@ -7,8 +7,7 @@ class BSTree {
 
     insert(data) {
         const newNode = new BSTNode(data);
-        if(this.root === null)
-            this.root = newNode;
+        if (this.root === null) this.root = newNode;
         else {
             this.insertNode(this.root, newNode);
         }
@@ -16,28 +15,22 @@ class BSTree {
 
     insertNode(bstNode, newNode) {
         if (newNode.data < bstNode.data) {
-            if (bstNode.left === null)
-                bstNode.left = newNode;
-            else
-                this.insertNode(bstNode.left, newNode);
+            if (bstNode.left === null) bstNode.left = newNode;
+            else this.insertNode(bstNode.left, newNode);
         } else {
-            if (bstNode.right === null)
-                bstNode.right = newNode;
-            else
-                this.insertNode(bstNode.right,newNode);
+            if (bstNode.right === null) bstNode.right = newNode;
+            else this.insertNode(bstNode.right, newNode);
         }
     }
 
-    delete(data)
-{
-    // root is re-initialized with
-    // root of a modified tree.
-    this.root = this.deleteNode(this.root, data);
-}
+    delete(data) {
+        // root is re-initialized with
+        // root of a modified tree.
+        this.root = this.deleteNode(this.root, data);
+    }
 
     deleteNode(bstNode, key) {
-        if (bstNode === null)
-            return null;
+        if (bstNode === null) return null;
         else if (key < bstNode.data) {
             bstNode.left = this.deleteNode(bstNode.left, key);
             return bstNode;
@@ -65,27 +58,21 @@ class BSTree {
     }
 
     findMin(bstNode) {
-        if(bstNode.left === null)
-            return bstNode;
-        else
-            return this.findMin(bstNode.left);
+        if (bstNode.left === null) return bstNode;
+        else return this.findMin(bstNode.left);
     }
 
     search(data, bstNode = this.root) {
-        if (bstNode === null)
-            return null;
-        else if(data < bstNode.data)
-            return this.search(data, bstNode.left);
-        else if(data > bstNode.data)
-            return this.search(data, bstNode.right);
-        else
-            return bstNode;
+        if (bstNode === null) return null;
+        else if (data < bstNode.data) return this.search(data, bstNode.left);
+        else if (data > bstNode.data) return this.search(data, bstNode.right);
+        else return bstNode;
     }
 
     // Tree traversals
 
     inorder(bstNode) {
-        if(bstNode !== null) {
+        if (bstNode !== null) {
             this.inorder(bstNode.left);
             console.log(bstNode.data);
             this.inorder(bstNode.right);
@@ -93,7 +80,7 @@ class BSTree {
     }
 
     preorder(bstNode) {
-        if(bstNode !== null) {
+        if (bstNode !== null) {
             console.log(bstNode.data);
             this.preorder(bstNode.left);
             this.preorder(bstNode.right);
@@ -101,9 +88,9 @@ class BSTree {
     }
 
     postorder(bstNode) {
-        if(bstNode !== null) {
-            this.postorder(bstNode.left); 
-            this.postorder(bstNode.right); 
+        if (bstNode !== null) {
+            this.postorder(bstNode.left);
+            this.postorder(bstNode.right);
             console.log(bstNode.data);
         }
     }

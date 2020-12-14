@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import squares from "../../Helpers/squares";
 import QueueLinkedList from "../Queue/QueueLinkedList.js";
-import QueueArraySVG from '../../../assets/Queue Array Visual.svg';
+import QueueArraySVG from "../../../assets/Queue Array Visual.svg";
 
 const list = new QueueLinkedList();
 list.enqueue(1);
@@ -19,10 +19,14 @@ class QueueDiagram extends Component {
         return (
             <div className="row justify-content-center align-items-center">
                 <div className="col-12 col-lg-8">
-                    <img className="img-fluid" src={ QueueArraySVG } alt="Queue enqueue and dequeue method SVG animation" />
+                    <img
+                        className="img-fluid"
+                        src={QueueArraySVG}
+                        alt="Queue enqueue and dequeue method SVG animation"
+                    />
                 </div>
             </div>
-        )
+        );
     }
 }
 

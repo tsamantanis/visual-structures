@@ -5,7 +5,7 @@ import QueueDiagram from "./QueueDiagram";
 import StackDiagram from "./StackDiagram";
 import BinaryTreeDiagram from "./BinaryTreeDiagram";
 import HashmapDiagram from "./HashmapDiagram";
-import GraphDiagram from './GraphDiagram';
+import GraphDiagram from "./GraphDiagram";
 import "../../../assets/styles/Diagram.css";
 class Diagram extends Component {
     render() {
@@ -28,9 +28,9 @@ class Diagram extends Component {
                         <StackDiagram />
                     </div>
                 ) : this.props.selected === "HASHMAP" ? (
-                        <HashmapDiagram />
+                    <HashmapDiagram />
                 ) : this.props.selected === "BINARY TREE" ? (
-                        <BinaryTreeDiagram />
+                    <BinaryTreeDiagram />
                 ) : this.props.selected === "GRAPH" ? (
                     <div className="graph">
                         <GraphDiagram />

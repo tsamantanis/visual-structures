@@ -1,12 +1,12 @@
 class Vertex {
     constructor(id, data) {
-        this.id = id
-        this.data = data
-        this.neighbors = []
+        this.id = id;
+        this.data = data;
+        this.neighbors = [];
     }
 
     addNeighbor(vertex) {
-        this.neighbors[vertex.id] = vertex
+        this.neighbors[vertex.id] = vertex;
     }
 }
 

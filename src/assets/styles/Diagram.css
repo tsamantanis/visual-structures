@@ -81,7 +81,6 @@
     /* justify-content: center; */
     /* align-items: center; */
     /* flex-direction: row; */
-
 }
 
 /* Animations */
@@ -277,5 +276,4 @@
 .graph .row .gradient-dots:nth-child(2n + 1) {
     transform: rotate(90deg);
     margin-top: -75%;
-
 }
