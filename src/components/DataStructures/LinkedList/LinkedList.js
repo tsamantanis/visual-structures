@@ -120,9 +120,9 @@ class LinkedList {
 
     search(value) {
         let currentNode = this.head;
-        while (currentNode != null) {
-            if (currentNode.data === value) {
-                return true;
+        while (currentNode !== null) {
+            if (Object.keys(currentNode.data)[0] === value) {
+                return Object.values(currentNode.data)[0];
             }
             currentNode = currentNode.next;
         }
